@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@700&display=swap');
+@font-face {
+    font-family: 'Nabla';
+    src: url('./fonts/Nabla-Regular.ttf') format('ttf'),
+         url('./fonts/Nabla.ttf') format('ttf');
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('background.jpg');
+    background-size: center;
+    background-position: bottom;
+    font-family: 'Bungee Spice', cursive;
+    /* font-family: 'Nabla', cursive; */
+    /* font-family: 'Foldit', cursive; */
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.visible {
+    display: block;
+}
+.countdown-item {
+    display: none;
+    font-size: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+    /* background-color: #333; */
+    background-color: #f9f9f9;
+    color: #fff;
+}
+.countdown-image {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    color: #fff;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+#countdown-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+#start-btn, #stop-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 162, 0);
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+#start-btn:hover, #stop-btn:hover {
+    background-color: #505050;
+    color: #eaeaea;
+}
+#start-btn:active, #stop-btn:active {
+    background-color: rgb(50, 33, 1);
+    color: #fff;
+}
+#stop-btn {
+    margin-left: 10px;
+    display: none;
+}
